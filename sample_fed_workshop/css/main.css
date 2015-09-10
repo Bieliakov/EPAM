@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+html {
+  font-family: 'PT Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+}
+ol,
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.g-clearfix:before,
+.g-clearfix:after {
+  content: "";
+  display: table;
+}
+.g-clearfix:after {
+  clear: both;
+}
+.is-photo:after {
+  content: '';
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  background-image: url('../i/small_photo.png');
+}
+.is-red-photo {
+  position: relative;
+}
+.is-red-photo:after {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  left: 7px;
+  width: 24px;
+  height: 19px;
+  background-image: url('../i/red_photo.png');
+}
+.is-source-link:after {
+  content: 'forbes.ua';
+  font-size: 11px;
+  color: #d0d0d1;
+}
+.is-p:after {
+  content: '';
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url('../i/p.png');
+}
+.is-video:after {
+  content: '';
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background-image: url('../i/video.png');
+}
+.l-wrapper {
+  width: 940px;
+  margin: auto;
+}
+.l-content {
+  margin: 50px 0;
+}
+.l-main {
+  float: left;
+  width: 620px;
+}
+.l-main-news-list {
+  float: left;
+  width: 380px;
+  margin-bottom: 40px;
+}
+.l-sidebar {
+  float: right;
+  width: 300px;
+  height: 500px;
+}
+.carousel {
+  border-bottom: 5px solid #c80000;
+  background: #f7f9fa;
+}
+.carousel-photo {
+  float: left;
+  width: 377px;
+  height: 250px;
+}
+.carousel-photo__image {
+  display: block;
+}
+.carousel__content {
+  padding: 20px 20px 0;
+  overflow: hidden;
+}
+.carousel__link {
+  display: block;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.carousel__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, #f7f9fa);
+}
+.carousel__title {
+  font-size: 24px;
+  line-height: 1.3;
+  color: #c80000;
+}
+.carousel__description {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #333333;
+}
+.carousel-control-container {
+  text-align: right;
+}
+.carousel__control {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 24px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../i/carousel-arrow-sprite.png);
+  background-repeat: no-repeat;
+}
+.carousel__control_prev {
+  background-position: 0 0;
+}
+.carousel__control_next {
+  background-position: -12px 0;
+}
+.carousel-indicator {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #333333;
+}
+.carousel-indicator__item_total::before {
+  content: "/";
+}
+.hot-themes {
+  margin-bottom: 20px;
+  background: #d7d8d9;
+}
+.hot-themes__header {
+  display: table-cell;
+  padding: 4px;
+  background: #333333;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.hot-themes-list {
+  padding: 0;
+  list-style: none;
+  display: table-cell;
+  vertical-align: top;
+}
+.hot-themes-list-item {
+  display: inline-block;
+  padding: 4px 8px;
+  vertical-align: top;
+}
+.hot-themes-list-item__title {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+.main-news {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.main-news__header {
+  border-bottom: 2px solid #333333;
+  margin-bottom: 9px;
+}
+.main-news__title {
+  display: inline-block;
+  position: relative;
+  bottom: -7px;
+  margin: 0;
+  padding-right: 10px;
+  background: #ffffff;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #333333;
+  font-weight: normal;
+}
+.main-news-list {
+  margin: 0;
+  padding: 0;
+}
+.main-news-list-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  margin-left: 19px;
+}
+.main-news-list-item__image {
+  display: block;
+}
+.main-news-list-item__title {
+  font-size: 14px;
+  color: #333333;
+}
+.main-news-list-item__photo-icon-outer {
+  display: inline;
+}
+.main-news-list-item__photo-icon {
+  vertical-align: bottom;
+}
+.main-news-list-item:first-child {
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 142px;
+}
+.last-news {
+  margin-bottom: 40px;
+}
+.last-news__header {
+  border-bottom: 2px solid #c80000;
+  margin-bottom: 9px;
+}
+.last-news__title {
+  display: inline-block;
+  position: relative;
+  bottom: -7px;
+  margin: 0;
+  padding-right: 10px;
+  background: #ffffff;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #3d76cc;
+  font-weight: normal;
+}
+.last-news-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.last-news-list-item {
+  position: relative;
+  margin-bottom: 4px;
+  padding-left: 10px;
+}
+.last-news-list-item:before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #333333;
+}
+.last-news-list-item__link {
+  font-size: 14px;
+  color: #333333;
+}
+.last-news-list-item__title:hover {
+  cursor: url('../i/cursor.png'), auto;
+  color: #3d76cc;
+  text-decoration: underline;
+}
+.ukraine-and-world__header {
+  border-bottom: 2px solid #c80000;
+  margin-bottom: 9px;
+}
+.ukraine-and-world__title {
+  display: inline-block;
+  position: relative;
+  bottom: -7px;
+  margin: 0;
+  padding-right: 10px;
+  background: #ffffff;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #3d76cc;
+  font-weight: normal;
+}
+.ukraine-and-world-top-news__image-outer {
+  float: left;
+}
+.ukraine-and-world-top-news__image-title {
+  margin-left: 110px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+.ukraine-and-world-list {
+  padding-left: 0;
+}
+.ukraine-and-world-list-item {
+  position: relative;
+  margin-bottom: 4px;
+  padding-left: 10px;
+}
+.ukraine-and-world-list-item:before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #333333;
+}
+.ukraine-and-world-list-item__link {
+  font-size: 14px;
+  color: #333333;
+}
+.ukraine-and-world-list-item__title:hover {
+  cursor: url('../i/cursor.png'), auto;
+  color: #3d76cc;
+  text-decoration: underline;
+}
+.big-pictures-news {
+  float: right;
+  display: block;
+  width: 220px;
+  overflow: hidden;
+}
+.big-pictures-news-list-item {
+  margin-bottom: 20px;
+}
+.big-pictures-news-list-item__image-outer {
+  line-height: 0;
+}
+.big-pictures-news-list-item__image-left {
+  float: left;
+}
+.big-pictures-news-list-item__image-left {
+  float: right;
+}
+.big-pictures-news-list-item__title {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}

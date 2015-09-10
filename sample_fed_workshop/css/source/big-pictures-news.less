@@ -1,0 +1,37 @@
+.big-pictures-news {
+  float: right;
+  display: block;
+  width: @big-picture-image-width;
+  overflow: hidden;
+
+  &-list {
+
+    &-item {
+
+      margin-bottom: 20px;
+
+      &__image {
+
+        &-outer{
+          line-height: 0;
+        }
+        &-left {
+          float: left;
+        }
+
+        &-left {
+          float: right;
+        }
+      }
+
+      &__title {
+        line-height: 1.2;
+        font-size: @big-pictures-font-size;
+        font-weight: bold;
+        color: @main-news-text-color;
+      }
+
+    }
+
+  }
+}

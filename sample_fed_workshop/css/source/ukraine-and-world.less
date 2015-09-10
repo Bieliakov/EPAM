@@ -1,0 +1,67 @@
+.ukraine-and-world {
+
+  &__header {
+    border-bottom: @news-header-border-bottom;
+    margin-bottom: @news-header-margin-bottom;
+  }
+
+  &__title {
+    display: inline-block;
+    position: relative;
+    bottom: -7px;
+    margin: 0;
+    padding-right: 10px;
+    background: @white;
+    vertical-align: middle;
+    font-size: @news-header-font-size;
+    color: @blue;
+    font-weight: normal;
+  }
+
+  &-top-news{
+
+    &__image-outer{
+      float: left;
+    }
+
+    &__image-title{
+      margin-left: 110px;
+      padding-top: 10px;
+      font-size: @article-font-size;
+      font-weight: bold;
+      color: @main-news-text-color;
+    }
+  }
+
+  &-list{
+    padding-left: 0;
+    &-item {
+      position: relative;
+      margin-bottom: 4px;
+      padding-left: 10px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 1px;
+        top: 10px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: @main-news-text-color;
+      }
+      &__link {
+        font-size: @article-font-size;
+        color: @main-news-text-color;
+      }
+
+      &__title{
+        &:hover{
+          cursor: url('@{image-path}cursor.png'), auto;
+          color: @hover-color-news-item;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
