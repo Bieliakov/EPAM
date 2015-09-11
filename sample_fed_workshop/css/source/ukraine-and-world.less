@@ -22,19 +22,25 @@
 
     &__image-outer{
       float: left;
+      margin-right: 5px;
     }
 
     &__image-title{
-      margin-left: 110px;
-      padding-top: 10px;
       font-size: @article-font-size;
       font-weight: bold;
       color: @main-news-text-color;
+
+      &-outer{
+        display: block;
+        padding-top: 3px;
+      }
     }
   }
 
   &-list{
-    padding-left: 0;
+
+    margin: 0;
+
     &-item {
       position: relative;
       margin-bottom: 4px;
