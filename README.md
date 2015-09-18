@@ -8,6 +8,10 @@ testing links:
 !! https://www.youtube.com/watch?v=uWFDqecjWLg
 +- https://www.youtube.com/watch?v=eVpXkyN0zOE
 
+. https://www.npmjs.com/package/jasmine-as-promised
+
+. http://blog.pivotal.io/labs/labs/testing-javascript-promises
+
 www.rexfeng.com/blog/2014/07/how-to-unit-test-your-js-and-use-it-in-the-browser/
 https://www.google.com/search?q=mock+document+and+window+objects&ie=utf-8&oe=utf-8
 http://blog.founddrama.net/2012/09/headless-javascript-testing-with-jasmine-and-phantomjs/
